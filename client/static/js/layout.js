@@ -1,4 +1,5 @@
 const { sendPost, getPost } = require('./api.js')
+<<<<<<< HEAD
 const { encode } = require('html-entities');
 
 window.addEventListener('hashchange', updateContent);
@@ -59,3 +60,6 @@ module.exports = {
     renderPost, renderForm, updateContent
 }
     
+=======
+const { encode } = require('html-entities');
+>>>>>>> db65d40ced489282ec9e5376fce58adf1f08b0f9
