@@ -22,3 +22,9 @@ Posts are stored in a MongoDB database and can be accessed through an API. This 
   - Dependencies include: express, cors, nodemon, mongoDB, watchify, concurrently
 - Test suite: Jest
 
+## API
+| **URL** | **HTTP Verb** |  **Action**|
+|------------|-------------|------------|
+| /posts/         	| GET       	| index  
+| /posts/:id        | GET       	| show   
+| /posts          	| POST      	| create   
