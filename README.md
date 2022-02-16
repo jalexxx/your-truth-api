@@ -38,4 +38,26 @@ Posts are stored in a MongoDB database and can be accessed through an API. This 
 |------------|-------------|------------|
 | /posts/         	| GET       	| index  
 | /posts/:id        | GET       	| show   
-| /posts          	| POST      	| create   
+| /posts          	| POST      	| create  
+
+# Bugs
+
+- The tests are WIP 
+
+# Could have
+
+- UPDATE route
+- DELETE route
+-  Can consider mutiple post that compile upon one another at the side of the page
+-  There will still be an empty pos which you can repeadtly fill through and publish
+-  More dynamic colour designs - light mode / dark mode ( not the generic white/black one but two other contrasting colours such as orange and blue etc)
+-  Change the error routes for the routes
+-  Have a welcome page that leads to the post page
+
+# Wins & Challenges
+
+- [WIN] : Able to get our API to work
+- [WIN] : The routes work pretty well
+- [CHALLENGE] : Being able to get the test to work
+- [CHALLENGE] : Chosing what error status each route should have 
+
