@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2955ee314e042d963bad5fd6e7a2a17f68d76685
 async function getPost(id) {
     try {
         const response = await fetch(`http://localhost:3000/posts/${id}`);
@@ -24,7 +28,7 @@ async function sendPost(e){
             body: JSON.stringify(formData)
         }
         
-        const response = await fetch('http://localhost:3000/posts', options);
+        const response = await fetch('http://localhost:3000/options', options);
         const data = await response.json();
         window.location.hash = `#${data}`
     } catch (err) {
