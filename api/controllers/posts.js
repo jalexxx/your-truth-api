@@ -10,7 +10,7 @@ async function index(req, res) {
     }
 }
 
-// posts show route
+// posts show route 
 async function show(req, res) {
     try {
         const post = await Post.findById(req.params.id);

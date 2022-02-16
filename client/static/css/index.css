@@ -32,7 +32,7 @@ form {
 input:not(input[type="submit"]),
 textarea {
   background: transparent;
-  min-height: 45px;
+  min-height: 46px;
   outline: none;
   border: none;
   color: rgb(232, 248, 9);

@@ -27,5 +27,5 @@ async function sendPost(e){
 }
 
 module.exports = {
-    sendPost, getPost
+sendPost, getPost
 }
