@@ -17,7 +17,8 @@ Posts are stored in a MongoDB database and can be accessed through an API. This 
 - Clone or download this repo
 - `npm install`
 -  `npm install -g nodemon`
-
+-  `npm init` + ` npm install express`
+-  
 ### Usage
 
 - Open your terminal/CLI and navigate to the `your-truth-api` folder
