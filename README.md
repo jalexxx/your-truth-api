@@ -6,7 +6,9 @@
  
 # your-truth-api
 
-Inspired by [Telegraph](https://telegra.ph/), this app allows users to write down their thoughts whilst remaining anonymous.
+Inspired by [Telegraph](https://telegra.ph/), this app allows users to write down their thoughts whilst remaining anonymous. It allows you to reflect on those thoughts as your mind speaks the truth. Reflect. And act upon that reflection as you please. 
+
+( Be wise ). 
 
 Posts are stored in a MongoDB database and can be accessed through an API. This app was created by [@bojin11](https://github.com/bojin11) and [@jalexxx](https://github.com/jalexxx/) as part of Futureproof's Coding Challenge.
 
