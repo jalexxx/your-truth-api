@@ -5,8 +5,8 @@ class Post {
     constructor(data) {
         this.id = data.id;
         this.title = data.title;
-        this.pseudonym = data.pseudonym;
-        this.content = data.content;
+        this.name = data.name;
+        this.blog = data.blog;
         this.date = data.date;
     }
 

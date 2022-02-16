@@ -217,11 +217,18 @@ async function getPost(id) {
 
 async function sendPost(e){
     e.preventDefault();
+
+    const formData = {
+        title: e.target.title.value,
+        name: e.target.name.value,
+        blog: e.target.blog.value
+    };
+
     try {
         const options = {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+            body: JSON.stringify(formData)
         }
         
         const response = await fetch('http://localhost:3000/posts', options);
@@ -235,6 +242,7 @@ async function sendPost(e){
 module.exports = {
     sendPost, getPost
 }
+
 },{}],6:[function(require,module,exports){
 const { sendPost, getPost } = require('./api.js')
 const { encode } = require('html-entities');
@@ -256,8 +264,8 @@ async function renderPost(id){
     root.innerHTML = `
     <div class="post-cont">
     <h2>${encode(postData.title)}</h2>
-    <h3 class="post" id="name">${encode(postData.pseudonym)}</h3><span> ● ${prettyDate(postData.date)}</span>
-    <p>${encode(postData.content)}<p>
+    <h3 class="post" id="name">${encode(postData.name)}</h3><span> ● ${prettyDate(postData.date)}</span>
+    <p>${encode(postData.blog)}<p>
     </div>`
 }
 
@@ -277,8 +285,8 @@ async function getNewPost(id){
 function renderForm(){
     const fields = [
         { tag: 'input', attributes: {autocomplete : "off", id: "title", required: "true", type: 'text', name: 'title', placeholder: 'Title' } },
-        { tag: 'input', attributes: {autocomplete : "off", id: "name", type: 'text', name: 'pseudonym', placeholder: 'Your name...' } },
-        { tag: 'textarea', attributes: { name: 'content', required: "true", placeholder: 'Your post...' } },
+        { tag: 'input', attributes: {autocomplete : "off", id: "name", type: 'text', name: 'name', placeholder: 'Your name...' } },
+        { tag: 'textarea', attributes: { name: 'blog', id: "blog", required: "true", placeholder: 'Your post...' } },
         { tag: 'input', attributes: { type: 'submit', value: 'submit' } }
     ]
     const root = document.getElementById('root')

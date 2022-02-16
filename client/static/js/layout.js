@@ -1,5 +1,4 @@
 const { sendPost, getPost } = require('./api.js')
-<<<<<<< HEAD
 const { encode } = require('html-entities');
 
 window.addEventListener('hashchange', updateContent);
@@ -19,8 +18,8 @@ async function renderPost(id){
     root.innerHTML = `
     <div class="post-cont">
     <h2>${encode(postData.title)}</h2>
-    <h3 class="post" id="name">${encode(postData.pseudonym)}</h3><span> ● ${prettyDate(postData.date)}</span>
-    <p>${encode(postData.content)}<p>
+    <h3 class="post" id="name">${encode(postData.name)}</h3><span> ● ${prettyDate(postData.date)}</span>
+    <p>${encode(postData.blog)}<p>
     </div>`
 }
 
@@ -40,8 +39,8 @@ async function getNewPost(id){
 function renderForm(){
     const fields = [
         { tag: 'input', attributes: {autocomplete : "off", id: "title", required: "true", type: 'text', name: 'title', placeholder: 'Title' } },
-        { tag: 'input', attributes: {autocomplete : "off", id: "name", type: 'text', name: 'pseudonym', placeholder: 'Your name...' } },
-        { tag: 'textarea', attributes: { name: 'content', required: "true", placeholder: 'Your post...' } },
+        { tag: 'input', attributes: {autocomplete : "off", id: "name", type: 'text', name: 'name', placeholder: 'Your name...' } },
+        { tag: 'textarea', attributes: { name: 'blog', id: "blog", required: "true", placeholder: 'Your post...' } },
         { tag: 'input', attributes: { type: 'submit', value: 'submit' } }
     ]
     const root = document.getElementById('root')
@@ -60,6 +59,3 @@ module.exports = {
     renderPost, renderForm, updateContent
 }
     
-=======
-const { encode } = require('html-entities');
->>>>>>> db65d40ced489282ec9e5376fce58adf1f08b0f9
