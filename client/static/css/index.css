@@ -58,7 +58,7 @@ input[type="submit"] {
   border-radius: 4px;
   background: transparent;
   padding: 0.5rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
 }
 input[type="submit"]:hover {
   background: rgb(232, 248, 9);
