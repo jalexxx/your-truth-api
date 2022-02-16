@@ -1,3 +1,9 @@
+## Table of Contents
+[Introduction to our api](#your-truth-api)  
+[Installation](#Installation)  
+[Usage](#Usage)  
+[API](#api)  
+ 
 # your-truth-api
 
 Inspired by [Telegraph](https://telegra.ph/), this app allows users to write down their thoughts whilst remaining anonymous.
