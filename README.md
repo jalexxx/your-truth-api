@@ -15,6 +15,8 @@ Posts are stored in a MongoDB database and can be accessed through an API. This 
 ### Installation
 
 - Clone or download this repo
+- `npm install`
+-  `npm install -g nodemon`
 
 ### Usage
 
