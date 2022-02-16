@@ -30,7 +30,7 @@ Posts are stored in a MongoDB database and can be accessed through an API. This 
 ## Technologies
 
 - HTML, CSS and JavaScript
-  - Dependencies include: express, cors, nodemon, mongoDB, watchify, concurrently
+  - Dependencies include: `express` , `cors` , `nodemon` , `mongoDB`, `watchify`, `concurrently`
 - Test suite: Jest
 
 ## API
